@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adarsh Madhukaran — Developer Portfolio</title>
+
+  <!-- Google Fonts:
+       "Fraunces" — editorial serif for headings (distinctive & memorable)
+       "DM Mono"  — clean monospace for labels and code feel
+       "Outfit"   — modern geometric sans for body text -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,700;0,900;1,300;1,700&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="portfolio.css"/>
+</head>
+<body>
+
+  <!-- ╔══════════════════════════════════════╗
+       ║  NAVIGATION BAR                     ║
+       ║  Sticky top nav with smooth links   ║
+       ╚══════════════════════════════════════╝ -->
+  <nav class="navbar" id="navbar">
+
+    <!-- Logo / monogram (left) -->
+    <a href="#hero" class="nav-logo">AM<span class="logo-dot">.</span></a>
+
+    <!-- Hamburger for mobile (toggles nav-links) -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- Navigation links (right) -->
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about"    class="nav-link">About</a></li>
+      <li><a href="#skills"   class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact"  class="nav-link">Contact</a></li>
+      <li><a href="#contact"  class="nav-cta">Hire Me</a></li>
+    </ul>
+
+  </nav>
+
+
+  <!-- ╔══════════════════════════════════════╗
+       ║  HERO SECTION                       ║
+       ║  Full-viewport intro                ║
+       ╚══════════════════════════════════════╝ -->
+  <section class="hero" id="hero">
+
+    <!-- Background decorative grid -->
+    <div class="hero-grid" aria-hidden="true"></div>
+
+    <!-- Floating monospace badge -->
+    <span class="hero-badge">// full-stack developer</span>
+
+    <!-- Main content block -->
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+
+      <!-- Name — two lines for editorial weight -->
+      <h1 class="hero-name">
+        <span class="name-line">Adarsh</span>
+        <span class="name-line italic">Madhukaran</span>
+      </h1>
+
+      <!-- Short tagline -->
+      <p class="hero-tagline">
+        I build fast, beautiful &amp; accessible web experiences<br/>
+        that users <em>actually</em> enjoy.
+      </p>
+
+      <!-- CTA buttons -->
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact"  class="btn-ghost">Let's Talk →</a>
+      </div>
+    </div>
+
+    <!-- Decorative floating shapes (CSS-animated) -->
+    <div class="hero-shapes" aria-hidden="true">
+      <div class="shape shape-circle"></div>
+      <div class="shape shape-ring"></div>
+    </div>
+
+    <!-- Scroll indicator at bottom center -->
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+
+  </section>
+
+
+  <!-- ╔══════════════════════════════════════╗
+       ║  ABOUT SECTION                      ║
+       ║  Bio + stats side by side           ║
+       ╚══════════════════════════════════════╝ -->
+  <section class="section about" id="about">
+    <div class="container">
+
+      <!-- Section label (monospace, numbered) -->
+      <span class="section-label">01 — About Me</span>
+
+      <div class="about-grid">
+
+        <!-- Left: avatar card with experience badge -->
+        <div class="about-visual">
+          <div class="avatar-card">
+            <div class="avatar-initials">AM</div>
+            <div class="avatar-ring"></div>
+          </div>
+          <!-- Floating stat badge -->
+          <div class="exp-badge">
+            <span class="exp-number">3+</span>
+            <span class="exp-label">Years<br/>Experience</span>
+          </div>
+        </div>
+
+        <!-- Right: bio text + quick stats -->
+        <div class="about-text">
+          <h2 class="section-heading">Crafting digital<br/><em>experiences.</em></h2>
+
+          <p class="about-body">
+            Hi! I'm <strong>Adarsh Madhukaran</strong>, a passionate full-stack developer
+            based in India. I specialise in building modern web applications — from clean,
+            responsive front-ends to robust back-end APIs.
+          </p>
+          <p class="about-body">
+            I love turning complex problems into simple, elegant solutions. When I'm not
+            coding, you'll find me exploring new tech, reading system design articles, or
+            tinkering with side projects.
+          </p>
+
+          <!-- Quick stats row -->
+          <div class="stats-row">
+            <div class="stat">
+              <span class="stat-num">15+</span>
+              <span class="stat-desc">Projects Built</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">8+</span>
+              <span class="stat-desc">Technologies</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">100%</span>
+              <span class="stat-desc">Dedication</span>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn-primary" style="display:inline-block;margin-top:28px;">
+            Download CV ↓
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ╔══════════════════════════════════════╗
+       ║  SKILLS SECTION                     ║
+       ║  Tech stack grouped by category     ║
+       ╚══════════════════════════════════════╝ -->
+  <section class="section skills" id="skills">
+    <div class="container">
+
+      <span class="section-label">02 — Skills</span>
+      <h2 class="section-heading">My Tech Stack</h2>
+
+      <!-- Skills grid: 4 category groups -->
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h3 class="skill-category">Frontend</h3>
+          <div class="skill-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">React.js</span>
+            <span class="tag">Vue.js</span>
+            <span class="tag">Tailwind CSS</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-category">Backend</h3>
+          <div class="skill-tags">
+            <span class="tag">Node.js</span>
+            <span class="tag">Express.js</span>
+            <span class="tag">Python</span>
+            <span class="tag">REST APIs</span>
+            <span class="tag">GraphQL</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-category">Database</h3>
+          <div class="skill-tags">
+            <span class="tag">MongoDB</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Firebase</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-category">Tools &amp; DevOps</h3>
+          <div class="skill-tags">
+            <span class="tag">Git &amp; GitHub</span>
+            <span class="tag">Docker</span>
+            <span class="tag">VS Code</span>
+            <span class="tag">Figma</span>
+            <span class="tag">Linux</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ╔══════════════════════════════════════╗
+       ║  PROJECTS SECTION                   ║
+       ║  6 project cards in a grid          ║
+       ╚══════════════════════════════════════╝ -->
+  <section class="section projects" id="projects">
+    <div class="container">
+
+      <span class="section-label">03 — Projects</span>
+      <h2 class="section-heading">Featured Work</h2>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: ShopNest -->
+        <article class="project-card">
+          <!-- Coloured top banner (colour set via CSS variable) -->
+          <div class="card-banner" style="--card-color:#e8623a;">
+            <span class="card-number">01</span>
+            <span class="card-icon">🛒</span>
+          </div>
+          <div class="card-body">
+            <div class="card-tags">
+              <span class="tag-sm">React</span>
+              <span class="tag-sm">Node.js</span>
+              <span class="tag-sm">MongoDB</span>
+            </div>
+            <h3 class="card-title">ShopNest</h3>
+            <p class="card-desc">
+              Full-stack e-commerce platform with cart, authentication,
+              payment integration, and an admin dashboard.
+            </p>
+            <div class="card-links">
+              <a href="#" class="card-link">Live Demo ↗</a>
+              <a href="#" class="card-link ghost">GitHub →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: TaskFlow -->
+        <article class="project-card">
+          <div class="card-banner" style="--card-color:#3a7bd5;">
+            <span class="card-number">02</span>
+            <span class="card-icon">✅</span>
+          </div>
+          <div class="card-body">
+            <div class="card-tags">
+              <span class="tag-sm">Vue.js</span>
+              <span class="tag-sm">Firebase</span>
+              <span class="tag-sm">CSS3</span>
+            </div>
+            <h3 class="card-title">TaskFlow</h3>
+            <p class="card-desc">
+              Real-time collaborative task manager with drag-and-drop boards,
+              team workspaces, and live sync across devices.
+            </p>
+            <div class="card-links">
+              <a href="#" class="card-link">Live Demo ↗</a>
+              <a href="#" class="card-link ghost">GitHub →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: WeatherLens -->
+        <article class="project-card">
+          <div class="card-banner" style="--card-color:#27ae7a;">
+            <span class="card-number">03</span>
+            <span class="card-icon">🌦️</span>
+          </div>
+          <div class="card-body">
+            <div class="card-tags">
+              <span class="tag-sm">JavaScript</span>
+              <span class="tag-sm">OpenWeather API</span>
+            </div>
+            <h3 class="card-title">WeatherLens</h3>
+            <p class="card-desc">
+              Sleek weather dashboard with 7-day forecasts, city search,
+              animated icons, and dark/light mode toggle.
+            </p>
+            <div class="card-links">
+              <a href="#" class="card-link">Live Demo ↗</a>
+              <a href="#" class="card-link ghost">GitHub →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: NexChat -->
+        <article class="project-card">
+          <div class="card-banner" style="--card-color:#8b5cf6;">
+            <span class="card-number">04</span>
+            <span class="card-icon">💬</span>
+          </div>
+          <div class="card-body">
+            <div class="card-tags">
+              <span class="tag-sm">React</span>
+              <span class="tag-sm">WebSockets</span>
+              <span class="tag-sm">Express</span>
+            </div>
+            <h3 class="card-title">NexChat</h3>
+            <p class="card-desc">
+              Real-time chat app with WebSocket connections, typing indicators,
+              message history, and a polished responsive UI.
+            </p>
+            <div class="card-links">
+              <a href="#" class="card-link">Live Demo ↗</a>
+              <a href="#" class="card-link ghost">GitHub →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5: FinTrack -->
+        <article class="project-card">
+          <div class="card-banner" style="--card-color:#e0a020;">
+            <span class="card-number">05</span>
+            <span class="card-icon">📊</span>
+          </div>
+          <div class="card-body">
+            <div class="card-tags">
+              <span class="tag-sm">Python</span>
+              <span class="tag-sm">Flask</span>
+              <span class="tag-sm">PostgreSQL</span>
+            </div>
+            <h3 class="card-title">FinTrack</h3>
+            <p class="card-desc">
+              Personal finance tracker with budget categories, monthly reports,
+              charts, and expense prediction via ML models.
+            </p>
+            <div class="card-links">
+              <a href="#" class="card-link">Live Demo ↗</a>
+              <a href="#" class="card-link ghost">GitHub →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 6: DevBlog -->
+        <article class="project-card">
+          <div class="card-banner" style="--card-color:#e84393;">
+            <span class="card-number">06</span>
+            <span class="card-icon">📝</span>
+          </div>
+          <div class="card-body">
+            <div class="card-tags">
+              <span class="tag-sm">Next.js</span>
+              <span class="tag-sm">Markdown</span>
+              <span class="tag-sm">Vercel</span>
+            </div>
+            <h3 class="card-title">DevBlog</h3>
+            <p class="card-desc">
+              Minimalist developer blog with Markdown support, syntax
+              highlighting, dark mode, and SEO optimisation.
+            </p>
+            <div class="card-links">
+              <a href="#" class="card-link">Live Demo ↗</a>
+              <a href="#" class="card-link ghost">GitHub →</a>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /projects-grid -->
+    </div>
+  </section>
+
+
+  <!-- ╔══════════════════════════════════════╗
+       ║  CONTACT SECTION                    ║
+       ║  Form + social links                ║
+       ╚══════════════════════════════════════╝ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+
+      <span class="section-label">04 — Contact</span>
+      <h2 class="section-heading">Let's Build<br/><em>Something Great.</em></h2>
+      <p class="contact-sub">
+        Have a project in mind or just want to say hi?<br/>
+        My inbox is always open.
+      </p>
+
+      <!-- Contact form -->
+      <form class="contact-form" id="contact-form">
+
+        <!-- Name + Email side by side -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text"  id="name"  name="name"  placeholder="John Doe"           required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com"   required />
+          </div>
+        </div>
+
+        <!-- Subject -->
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Project Inquiry" />
+        </div>
+
+        <!-- Message -->
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5"
+                    placeholder="Tell me about your project…" required></textarea>
+        </div>
+
+        <!-- Submit -->
+        <button type="submit" class="btn-primary full-width">Send Message →</button>
+
+        <!-- Success message, shown by JS after submit -->
+        <p class="form-success hidden" id="form-success">
+          ✅ Message sent! I'll get back to you soon.
+        </p>
+
+      </form>
+
+      <!-- Social / direct contact links -->
+      <div class="social-row">
+        <a href="mailto:adarsh@example.com" class="social-link">
+          <span>✉️</span> adarsh@example.com
+        </a>
+        <a href="https://github.com"   target="_blank" rel="noopener" class="social-link">
+          <span>🐙</span> GitHub
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link">
+          <span>💼</span> LinkedIn
+        </a>
+        <a href="https://twitter.com"  target="_blank" rel="noopener" class="social-link">
+          <span>🐦</span> Twitter
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ╔══════════════════════════════════════╗
+       ║  FOOTER                             ║
+       ╚══════════════════════════════════════╝ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-name">Adarsh Madhukaran</span>
+      <span class="footer-copy">© 2025 · Built with HTML &amp; CSS</span>
+      <a href="#hero" class="back-to-top">↑ Top</a>
+    </div>
+  </footer>
+
+
+  <!-- ══════════════════════════════════════
+       Inline JS (kept minimal — behaviour only)
+       • Navbar shadow on scroll
+       • Mobile hamburger toggle
+       • Active nav link on scroll
+       • Contact form submit feedback
+  ════════════════════════════════════════ -->
+  <script>
+    /* ── Navbar shadow when scrolled ── */
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    /* ── Mobile menu toggle ── */
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      hamburger.classList.toggle('active');
+    });
+
+    /* ── Close mobile menu on link click ── */
+    document.querySelectorAll('.nav-link, .nav-cta').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        hamburger.classList.remove('active');
+      });
+    });
+
+    /* ── Highlight active nav link based on scroll ── */
+    const sections = document.querySelectorAll('section[id]');
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY + 120;
+      sections.forEach(sec => {
+        const link = document.querySelector(`.nav-link[href="#${sec.id}"]`);
+        if (link) {
+          const inView = scrollY >= sec.offsetTop && scrollY < sec.offsetTop + sec.offsetHeight;
+          link.classList.toggle('active', inView);
+        }
+      });
+    });
+
+    /* ── Contact form: demo submit feedback ── */
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const success = document.getElementById('form-success');
+      success.classList.remove('hidden');
+      this.reset();
+      // Auto-hide after 4 seconds
+      setTimeout(() => success.classList.add('hidden'), 4000);
+    });
+  </script>
+
+</body>
+</html>
